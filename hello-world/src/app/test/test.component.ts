@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
                 Inline template with backticks
               </div>
               `,
-  styleUrls: ['./test.component.css']
+  styles: [`
+    div{
+      color: red;
+    }
+  `],
 })
 export class TestComponent implements OnInit {
 
