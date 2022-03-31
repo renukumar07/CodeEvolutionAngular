@@ -4,13 +4,14 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-test',
   template: `
     <h2>
-      Welcome Renu
+      Welcome {{name}}
     <h2>
   `,
   styleUrls: []
 })
 export class TestComponent implements OnInit {
 
+  public name = "Renu"
   constructor() { }
 
   ngOnInit(): void {
