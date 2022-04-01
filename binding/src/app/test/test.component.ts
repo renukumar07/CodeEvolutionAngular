@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
     <h2>
       Welcome {{name}}
     </h2>
-    <input [disabled]="isDisabled" [id]="myId" type="text" value="Renu Kumar"/>
+    <input bind-disabled="isDisabled" [id]="myId" type="text" value="Renu Kumar"/>
   `,
   styleUrls: []
 })
