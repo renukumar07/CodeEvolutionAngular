@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
     <h2>
       Welcome {{name}}
     </h2>
-    <input id="{{myId}}" type="text" value="Renu Kumar"/>
+    <input [disabled]="isDisabled" [id]="myId" type="text" value="Renu Kumar"/>
   `,
   styleUrls: []
 })
@@ -14,6 +14,7 @@ export class TestComponent implements OnInit {
 
   public name = "Renu"
   public myId = "testId"
+  public isDisabled = true
   constructor() { }
 
   ngOnInit(): void {
